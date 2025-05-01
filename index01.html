@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+    body,h1,h2,h3,h4,p{
+        margin: 0;
+    }
+    img{
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    header{
+        height: 60vh;
+        position: relative;
+    }
+    header img{
+        height: 100%;
+    }
+    header .text-box{
+        position: absolute; left: 50%; top: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        text-align: center;
+        text-shadow: 2px 2px 4px #000;
+        color: #fff;
+    }
+    header .text-box h1{
+        font-size: 42px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    header .text-box p{
+        font-size: 18px;
+    }
+    nav{
+        position: absolute; left: 0; top: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 100px;
+        box-sizing: border-box;
+        color: #fff;
+        align-items: center;
+    }
+    nav .logo{
+        font-size: 32px;
+    }
+    nav .menu{
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+    }
+    nav .icon-box{
+        width: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .s1{
+        padding: 50px 100px;
+        box-sizing: border-box;
+    }
+    .s1 h2{
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+    .s1 .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .s1 .container .item{
+        width: calc((100% - 60px)/4);
+    }
+    .s1 .container .item .img-box{
+        overflow: hidden;
+        margin-bottom: 12px;
+    }
+    .s1 .container .item .img-box:hover img{scale: 1.2;}
+    .s1 .container .item .img-box img{
+        height: 300px;
+        transition: 1.5s;
+    }
+    .s1 .container .item .text-box{
+
+    }
+    .s1 .container .item .text-box h3{
+        margin-bottom: 8px;
+    }
+    .s2{
+        padding: 50px 100px;
+        box-sizing: border-box;
+    }
+    .s2 h2{
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    .s2 .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .s2 .container .item{
+        position: relative;
+        width: calc((100% - 20px)/2);
+    }
+    .s2 .container .item img{
+        height: 250px;
+    }
+    .s2 .container .item .text-box{
+        position: absolute; left: 50px; bottom: 50px;
+        color: #fff;
+    }
+    .s3{
+        padding: 50px 100px;
+        box-sizing: border-box;
+    }
+    .s3 h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+    .s3 .container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .s3 .container .item-s{
+        width: calc((100% - 40px)/4);
+    }
+    .s3 .container .item-b{
+        width: calc((100% - 40px)/4 * 2);
+    }
+    .s3 .container .item img{
+        height: 200px;
+    }
+    .s3 .container:nth-child(2){
+        margin-bottom: 30px;
+    }
+
+
+    @media (max-width:1200px){
+        nav .menu{width: 40%;}
+        .s1 .container .item:nth-child(4){
+            display: none;
+        }
+        .s1 .container .item{
+            width: calc((100% - 40px)/3);
+        }
+    }
+    @media (max-width:800px){
+        nav{padding: 20px 20px;}
+        nav .menu{width: 55%;}
+        header .text-box{
+        left: 20px; transform: translate(0, -50%);
+        text-align: left;
+        }
+        .s1 .container .item:nth-child(4){
+            display: block;
+        }
+        .s1 .container .item{width: calc((100% - 20px)/2);}
+        .s2 .container .item{width: 100%;}
+    }
+    @media (max-width:500px){
+        nav .menu{display: none;}
+        header .text-box h1{font-size: 24px;}
+        header .text-box p{font-size: 12px;}
+        .s1, .s2, .s3{padding: 50px 20px;}
+        .wrap section .container .item{width: 100%;}
+    }
+</style>
+<body>
+    <div class="wrap">
+        <header>
+            <img src="imgs/img7.jpg" alt="">
+            <div class="text-box">
+                <h1>Lorem Ipsum is simply</h1>
+                <p>It has survived not only five centuries, but also the leap into electronic typesetting</p>
+            </div>
+            <nav>
+                <div class="logo">HOME PAGE</div>
+                <div class="menu">
+                    <p>MENU1</p>
+                    <p>MENU2</p>
+                    <p>MENU3</p>
+                    <p>MENU4</p>
+                    <p>MENU5</p>
+                </div>
+                <div class="icon-box">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-camera"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="s1">
+                <h2>Contrary to popular belief</h2>
+                <div class="container">
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="imgs/img1.jpg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Lorem Ipsum is not simply</h3>
+                            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="imgs/img1.jpg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Lorem Ipsum is not simply</h3>
+                            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="imgs/img1.jpg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Lorem Ipsum is not simply</h3>
+                            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="img-box">
+                            <img src="imgs/img1.jpg" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h3>Lorem Ipsum is not simply</h3>
+                            <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s2">
+                <h2>There are many variations of passages</h2>
+                <div class="container">
+                    <div class="item">
+                        <img src="imgs/img7.jpg" alt="">
+                        <div class="text-box">
+                            <h3>It is a long established fact</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="imgs/img7.jpg" alt="">
+                        <div class="text-box">
+                            <h3>It is a long established fact</h3>
+                            <p>There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s3">
+                <h2>All the Lorem Ipsum generators</h2>
+                <div class="container">
+                    <div class="item item-s">
+                        <img src="imgs/img1.jpg" alt="">
+                    </div>
+                    <div class="item item-b">
+                        <img src="imgs/img1.jpg" alt="">
+                    </div>
+                    <div class="item item-s">
+                        <img src="imgs/img1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="item item-s">
+                        <img src="imgs/img1.jpg" alt="">
+                    </div>
+                    <div class="item item-b">
+                        <img src="imgs/img1.jpg" alt="">
+                    </div>
+                    <div class="item item-s">
+                        <img src="imgs/img1.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
